@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rod.dev.br</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navbar">
+        <div>
+          <span class="navbar-logo">rod.dev.br</span>
+        </div>
+        <div class="navbar-icons">
+          <a href="https://www.linkedin.com/in/rodrigo-rodrigues-scotti/" title="linkedin" target="_blank">
+            <i class="icon-margin-x icon-small devicon-linkedin-plain"></i>
+          </a>
+          <a href="https://github.com/RodriguesRodrigo" title="Github" target="_blank">
+            <i class="icon-margin-x icon-small devicon-github-original"></i>
+          </a>
+        </div>
+      </nav>
+      <section class="content">
+        <picture>
+          <source media="(max-width: 767px)" srcset="/static/img/profile-small.png">
+          <source media="(min-width: 768px)" srcset="/static/img/profile-large.png">
+          <img class="img-profile" src="/static/img/profile-large.png" alt="profile">
+        </picture>
+        <article class="article">
+          <h1 class="title">HELLO, I'M <strong>RODRIGO</strong></h1>
+          <p class="about">I'm a software developer. I currently work with python and javascript languages. I really enjoy studying software architecture and infrastructure.</p>
+        </article>
+      </section>
+      <footer class="footer">
+        <i class="icon-margin-x icon-medium devicon-python-plain"></i>
+        <i class="icon-margin-x icon-medium devicon-javascript-plain"></i>
+        <i class="icon-margin-x icon-medium devicon-linux-plain"></i>
+        <i class="icon-margin-x icon-medium devicon-docker-plain"></i>
+        <i class="icon-margin-x icon-medium devicon-kubernetes-plain"></i>
+      </footer>
+    </main>
+    <style>
+      * { box-sizing: border-box;}
+      body {
+        background-color: #373740;
+        color: #F0F0F2;
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        margin: 0px auto;
+        padding: 25px 35px;
+        max-width: 1024px;
+      }
+
+      .icon-margin-x { margin: 0px 7px }
+      .icon-medium { font-size: 1.875rem; }
+      .icon-small { font-size: 1.125rem; }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar .navbar-logo { font-size: 1rem; }
+      .navbar .navbar-icons a {
+        color: #F0F0F2;
+        text-decoration: none;
+      }
+      .navbar .navbar-icons i:last-child { margin-right: 0px; }
+
+      .content .img-profile {
+        border: #D9D9D9 solid 2px;
+        border-radius: 50%;
+        margin-bottom: 12px;
+      }
+      .content .article { max-width: 530px; }
+      .content .title {
+        font-size: 2.25rem;
+        font-weight: normal;
+        line-height: 44px;
+        margin: 12px 0px;
+      }
+      .content .about {
+        font-size: 1rem;
+        line-height: 22px;
+        margin: 12px 0px 0px;
+      }
+
+      @media screen and (min-width: 620px) {
+        .content {
+          align-items: center;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+        }
+
+        .article { margin-right: 30px; }
+      }
+
+      @media screen and (min-width: 768px) {
+        .icon-medium { font-size: 2.188rem; }
+        .icon-small { font-size: 2.5rem; }
+
+        .navbar .navbar-logo { font-size: 1.5rem; }
+
+        .content .title {
+          font-size: 3rem;
+          line-height: 55px;
+        }
+        .content .about {
+          font-size: 1.5rem;
+          line-height: 30px;
+        }
+      }
+
+      .footer i:last-child { margin-right: 0px; }
+    </style>
+  </body>
+</html>
